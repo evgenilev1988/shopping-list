@@ -40,7 +40,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'app/index.html'
         }),
-        new NodePolyfillPlugin()
+        new NodePolyfillPlugin(),
+        new CopyPlugin({ patterns: [{ from : 'app/images', to:'images' }] })
     ],
     devServer:{
         historyApiFallback:true
