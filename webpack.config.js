@@ -22,6 +22,7 @@ module.exports = {
                     },
                   },
                 ],
+                type: 'asset/resource'
               },
             {
                 test: /\.(png|jpe?g|gif)$/i,
@@ -29,7 +30,8 @@ module.exports = {
                     {
                         loader: 'file-loader',
                     }
-                ]
+                ],
+                type: 'asset/resource'
             },
             { test: /\.(js)$/, use: 'babel-loader'},
             { test: /\.css$/, use: ['style-loader','css-loader']}
@@ -40,10 +42,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'app/index.html'
         }),
-        new NodePolyfillPlugin(),
-        new CopyPlugin({ patterns: [{ from : 'app/images', to:'app/images' }] })
+        new NodePolyfillPlugin()
     ],
     resolve: {
+        extensions: ['.jpeg'],
         alias: {
           Images: path.resolve(__dirname, 'app/images')
         },
