@@ -4,14 +4,10 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
-import Isle from 'Images/isle.jpeg';
-import Isle2 from 'Images/isle2.jpeg';
-import Longos from 'Images/longos.svg';
-
-//import Isle from '../../images/isle.jpeg';
-//import Isle2 from '../../images/isle2.jpeg';
-//import Longos from '../../images/longos.svg';
-
+import Isle from 'Images/isle';
+import Isle2 from 'Images/isle2';
+import Longos from 'Images/longos';
+ 
 import './Landing.css';
 
 const Landing = ()=>{

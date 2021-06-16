@@ -15,7 +15,7 @@ module.exports = {
             {
                 test: /\.svg$/,
                 type: 'asset/resource'
-              },
+            },
             {
                 test: /\.(png|jpe?g|gif)$/i,
                 type: 'asset/resource'
@@ -32,9 +32,10 @@ module.exports = {
         new NodePolyfillPlugin()
     ],
     resolve: {
+        extensions: ['.js', '.css', '.png', '.jpg', '.gif', '.jpeg','.svg'],
         alias: {
           Images: path.resolve(__dirname, 'app/images')
-        },
+        }
       },
     devServer:{
         historyApiFallback:true

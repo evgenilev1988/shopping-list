@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 import './Nav.css';
 
 const activeStyle = {
-    color: 'rgb(187, 46, 31)'
+    color: 'black'
   }
 
 const Nav = ()=>{
