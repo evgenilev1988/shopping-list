@@ -40,8 +40,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'app/index.html'
         }),
-        new NodePolyfillPlugin(),
-        new CopyPlugin({ patterns: [{ from : 'app/images', to:'images' }] })
+        new NodePolyfillPlugin()
     ],
     resolve: {
         alias: {
