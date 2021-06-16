@@ -43,6 +43,11 @@ module.exports = {
         new NodePolyfillPlugin(),
         new CopyPlugin({ patterns: [{ from : 'app/images', to:'images' }] })
     ],
+    resolve: {
+        alias: {
+          Images: path.resolve(__dirname, 'app/images')
+        },
+      },
     devServer:{
         historyApiFallback:true
     }
