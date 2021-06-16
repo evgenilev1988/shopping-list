@@ -1,0 +1,30 @@
+
+button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .grocery-search-filter-section{
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    background-image: url('../../images/dairy.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+.filter-text{
+  font-size: 25px;
+}

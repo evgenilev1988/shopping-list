@@ -1,0 +1,16 @@
+.modify-list{
+    text-align: center;
+}
+
+
+.grocery-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.item{
+    display: inline-block;
+}

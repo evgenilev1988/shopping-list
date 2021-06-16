@@ -1,0 +1,11 @@
+.add-grocery{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    justify-self: center;
+    margin: 0 auto;
+}

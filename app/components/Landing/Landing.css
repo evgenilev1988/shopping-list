@@ -1,0 +1,20 @@
+.landing-page{
+    display: grid;
+    justify-content: centers;
+}
+
+h1{
+    text-align: center;
+}
+
+.carousel .slide img{
+    max-width: 64%;
+
+}
+
+.banner-section{
+    text-align: center;
+}
+.longos-banner{
+    height: 60px;
+}
