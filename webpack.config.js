@@ -45,7 +45,6 @@ module.exports = {
         new NodePolyfillPlugin()
     ],
     resolve: {
-        extensions: ['.jpeg'],
         alias: {
           Images: path.resolve(__dirname, 'app/images')
         },
