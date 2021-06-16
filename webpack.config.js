@@ -14,23 +14,10 @@ module.exports = {
         rules:[
             {
                 test: /\.svg$/,
-                use: [
-                  {
-                    loader: 'svg-url-loader',
-                    options: {
-                      limit: 10000,
-                    },
-                  },
-                ],
                 type: 'asset/resource'
               },
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                    }
-                ],
                 type: 'asset/resource'
             },
             { test: /\.(js)$/, use: 'babel-loader'},
